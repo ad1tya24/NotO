@@ -1,18 +1,21 @@
 function init()
 {
-    objs = document.querySelector("select");
+    obj = document.querySelector("select");
     interns = document.querySelectorAll("div")
-    objs.addEventListener('click', (e) => {
+    interns.forEach((currentvalue) => {
+        currentvalue.style.setProperty("display","none")
+    })
+    obj.addEventListener('click', (e) => {
+        interns.forEach((currentvalue) => {
+            currentvalue.style.setProperty("display","none")
+            })
             interns[0].style.display = "block";
             // const name = e.target.
-            for(j=1;j<interns.length;j++)
-            {
-                
-                console.log(interns[j].innerHTML+ name)
-                if(interns[j]==name)
-                {
-                    interns[j].style.display = "block"  ;
-                }
-            }
+            const name = document.querySelector('select').value;
+            objs = document.querySelectorAll("." + name)
+            objs.forEach( (currentvalue)=> {
+                currentvalue.style.setProperty("display","block")
+            });
+            interns
         });
 }
