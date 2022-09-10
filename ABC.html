@@ -2,13 +2,9 @@
 <html>
     <head>
         <title>ABC system</title>
-        <style>
-            h1{
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="abc.css">
     </head>
-    <body>
+    <body onload="init()">
         <h1>ABC page, Welcome</h1>
         <br><br>
         <br>
@@ -20,46 +16,46 @@
                       <th>Credit</th>
                       <th>Category</th>
                     </tr>
-                    <tr>
+                    <tr id="Sports">
                       <td>1</td>
                       <td>C1</td>
-                      <td>X</td>
+                      <td class="credits">X</td>
                       <td>Sports</td>
                     </tr>
-                    <tr>
+                    <tr id="Education">
                       <td>2</td>
                       <td>C2</td>
-                      <td>Y</td>
+                      <td class="credits">Y</td>
                       <td>Education</td>
                     </tr>
-                    <tr>
+                    <tr id="Dance">
                       <td>3</td>
                       <td>C3</td>
-                      <td>Z</td>
+                      <td class="credits">Z</td>
                       <td>Dance</td>
                     </tr>
-                    <tr>
+                    <tr id="Music">
                       <td>4</td>
                       <td>C4</td>
-                      <td>A</td>
+                      <td class="credits">A</td>
                       <td>Music</td>
                     </tr>
-                    <tr>
+                    <tr id="Art">
                       <td>5</td>
                       <td>C5</td>
-                      <td>B</td>
+                      <td class="credits">B</td>
                       <td>Art</td>
                     </tr>
-                    <tr>
+                    <tr id="Literary group">
                       <td>6</td>
                       <td>C6</td>
-                      <td>C</td>
+                      <td class="credits">C</td>
                       <td>Literary group</td>
                     </tr>
-                    <tr>
+                    <tr id="Technological field">
                       <td>7</td>
                       <td>C7</td>
-                      <td>D</td>
+                      <td class="credits">D</td>
                       <td>Technological field</td>
                     </tr>
             </table>
@@ -79,10 +75,54 @@
                 <option value="Technological_field">Educational field</option>
                 </select>
                 <br>
-            <p>Suggestion of internship(based on category): </p>
         </form>
-        <script>
-            //Abhay add maadi
-        </script>
+        <div id="block"><p>Suggestion of internship(based on category): </p>
+          <div id="Apple" class="Technological_field">
+            Apple
+          </div>
+          <div id="Google" class="Technological_field">
+            Google
+          </div>
+          <div id="IBM">
+            IBM
+          </div>
+          <div id="Microsoft" class="Technological_field">
+            Microsoft
+          </div>
+          <div id="HRX" class="Sports">
+            HRX
+          </div>
+          <div id="Decathlon" class="Sports">
+            Decathlon
+          </div>
+          <div id="ESPN" class="Sports">
+            ESPN
+          </div>
+          <div id="PES" class="Education">
+            PES
+          </div>
+          <div id="IISc" class="Education">
+            IISc
+          </div>
+          <div id="RV" class="Education">
+            RV
+          </div>
+          <div id="Sony Music" class="Music">
+            Sony Music
+          </div>
+          <div id="T" class="Music">
+            T-series
+          </div>
+          <div id="Pie" class="Music">
+            Pewdiepie
+          </div>
+          <div id="Indie" class="Art">
+            Indie Cult
+          </div>
+          <div id="Pinterest" class="Art">
+            Pinterest
+          </div>
+        </div>
+        <script src="ABC.js"></script>
     </body>
 </html>
