@@ -6,8 +6,9 @@
                 color:aliceblue
             }
             body{
-                background-image: url('bgi1.jpeg');
+                background-image: url('background.jpg');
                 background-size: cover;
+                background-color: black;
                 font-size: larger;
                 margin-left: 20px;    
             }
@@ -17,6 +18,7 @@
             div.options{
                 margin-left: 68px;
             }
+
         </style>
         <title>Student Feedback</title>
         <h1>STUDENT FEEDBACK</h1>
@@ -68,11 +70,11 @@
                 &nbsp;<input type="radio" id="opF" name="val6" value="4">
                 &nbsp;<input type="radio" id="opF" name="val6" value="5">
                 <br><br>
-                <label for="prob">Any other problems:</label>
-                <input type="text" id="prob" name="prob">
+                <label for="prob">Any other problems:</label><br>
+                <textarea cols="40" rows="3" type="text" id="prob" name="prob" ></textarea>
                 <br><br>
                 <label for="que">Any other queries, please type in:</label>
-                <input type="text" id="que" name="que">
+                <textarea cols="40" rows="3" type="text" id="que" name="que"></textarea>
             </div>
             <br><br>
             <input type="submit" value="Submit">
