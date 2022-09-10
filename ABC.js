@@ -7,6 +7,7 @@ function init()
             // const name = e.target.
             for(j=1;j<interns.length;j++)
             {
+                
                 console.log(interns[j].innerHTML+ name)
                 if(interns[j]==name)
                 {
