@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Student Feedback</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
         <style>
-            html{
+             html{
                 color:aliceblue
             }
             body{
@@ -19,77 +24,138 @@
             div.options{
                 
                 margin-left: 68px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
             }
             div.center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                
+                text-align: center;
             }
-
+            table.center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
         </style>
-        <title>Student Feedback</title>
-        <h1>STUDENT FEEDBACK</h1>
+        <title>Student Feedback</title>       
     </head>
     
     <body >
-        <div class="center">
-        <br><br><br>
-        <form action="" method="get" style="border:aliceblue; border-width:3px; border-style:inset; margin-right: 300px;margin-left: 300px;">
-            <div style="display : inline">
-                <div class="options"> &nbsp;&ensp;&ensp;1&ensp;&ensp;2&ensp;&ensp;&nbsp;3&ensp;&nbsp;&ensp;4&ensp;&ensp;5</div>
-                <label for="opA">Option A</label>
-                &nbsp;<input type="radio" id="opA" name="val1" value="1">
-                &nbsp;<input type="radio" id="opA" name="val1" value="2">
-                &nbsp;<input type="radio" id="opA" name="val1" value="3">
-                &nbsp;<input type="radio" id="opA" name="val1" value="4">
-                &nbsp;<input type="radio" id="opA" name="val1" value="5">
-                &nbsp;<br>
-                <label for="opB">Option B</label>
-                &nbsp;<input type="radio" id="opB" name="val2" value="1">
-                &nbsp;<input type="radio" id="opB" name="val2" value="2">
-                &nbsp;<input type="radio" id="opB" name="val2" value="3">
-                &nbsp;<input type="radio" id="opB" name="val2" value="4">
-                &nbsp;<input type="radio" id="opB" name="val2" value="5">
-                <br>
-                <label for="opC">Option C</label>
-                &nbsp;<input type="radio" id="opC" name="val3" value="1">
-                &nbsp;<input type="radio" id="opC" name="val3" value="2">
-                &nbsp;<input type="radio" id="opC" name="val3" value="3">
-                &nbsp;<input type="radio" id="opC" name="val3" value="4">
-                &nbsp;<input type="radio" id="opC" name="val3" value="5">
-                <br>
-                <label for="opD">Option D</label>
-                &nbsp;<input type="radio" id="opD" name="val4" value="1">
-                &nbsp;<input type="radio" id="opD" name="val4" value="2">
-                &nbsp;<input type="radio" id="opD" name="val4" value="3">
-                &nbsp;<input type="radio" id="opD" name="val4" value="4">
-                &nbsp;<input type="radio" id="opD" name="val4" value="5">
-                <br>
-                <label for="opE">Option E</label>
-                &nbsp;<input type="radio" id="opE" name="val5" value="1">
-                &nbsp;<input type="radio" id="opE" name="val5" value="2">
-                &nbsp;<input type="radio" id="opE" name="val5" value="3">
-                &nbsp;<input type="radio" id="opE" name="val5" value="4">
-                &nbsp;<input type="radio" id="opE" name="val5" value="5">
-                <br>
-                <label for="opF">Option F</label>
-                &nbsp;<input type="radio" id="opF" name="val6" value="1">
-                &nbsp;<input type="radio" id="opF" name="val6" value="2">
-                &nbsp;<input type="radio" id="opF" name="val6" value="3">
-                &nbsp;<input type="radio" id="opF" name="val6" value="4">
-                &nbsp;<input type="radio" id="opF" name="val6" value="5">
-                <p style="font-size: 10px;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1:poor&ensp;&ensp;5:amazing</p>
-                <label for="prob">Any other problems:</label><br>
-                <textarea cols="40" rows="3" type="text" id="prob" name="prob" ></textarea>
-                <br><br>
-                <label for="que">Any other queries, please type in:</label><br>
-                <textarea cols="40" rows="3" type="text" id="que" name="que"></textarea>
+        
+        <section class="header">
+            <nav>
+                <a><img src="images/logo.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="welcome_page.html">Home</a></li>
+                        <li><a href="">ABC</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="test1.html">Student Review</a></li>
+                        <li><a href="#bottom">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>STUDENT FEEDBACK</h1>
+            <div class="center">
+                <br><br><br>
+                <form action="" method="get" style="border:aliceblue; border-width:3px; border-style:inset; margin-right: 300px;margin-left: 300px;">
+                    
+                        <table  style="margin-left:auto;margin-right:auto">
+                        
+                       <tr>
+                        <td> </td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                       </tr>
+                       <tr>
+                        <td>Option A</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option B</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option C</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option D</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option E</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option F</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr>
+                        <td>Option G</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                        </table>
+                        <p style="font-size: 10px;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1:poor&ensp;&ensp;5:amazing</p>
+                        <label for="prob">Any other problems:</label><br>
+                        <textarea cols="40" rows="3" type="text" id="prob" name="prob" ></textarea>
+                        <br><br>
+                        <label for="que">Any other queries, please type in:</label><br>
+                        <textarea cols="40" rows="3" type="text" id="que" name="que"></textarea>
+                    </div>
+                    <br><br>
+                    <center><input type="submit" value="Submit"></center>
+                </form>
             </div>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    <section class="footer">
+        <h2>About Us</h2>
+        <p><h5><u>Team Not0</u></h5>
+            <h5>Abhay Joshi, Abhiram H A, Adithya T G, Aditya A S<br>
+            Bengaluru</h5><br>
+            <h6>© 2022, Not0 Pvt. Ltd. All Rights Reserved.</h6>
+        </p>
+        </div>
+        <a href=""><img src="images/instagram.png"></a>&nbsp;
+        <a href=""><img src="images/facebook.png"></a>&nbsp;
+        <a href=""><img src="images/twitter.png"></a>&nbsp;
+        <a href=""><img src="images/linkedin.png"></a>&nbsp;
+    </section>
+<div id="bottom"></div>
     </body>
 
 </html>
